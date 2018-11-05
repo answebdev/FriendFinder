@@ -6,6 +6,9 @@ var path = require("path");
 // ===============================================================================
 
 module.exports = function(app) {
+
+    console.log("Welcome to the htmlRoutes.js file");
+
   // HTML GET Requests
   // Below code handles when users "visit" a page.
   // In each of the below cases the user is shown an HTML page of content
@@ -19,7 +22,7 @@ module.exports = function(app) {
   });
 
   // If no matching route is found default to Home
-  app.get("*", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/home.html"));
-  });
+//   app.get("*", function(req, res) {
+//     res.sendFile(path.join(__dirname, "../public/home.html"));
+//   });
 };

@@ -12,6 +12,10 @@ var app = express();
 // Set initial port, which we will use later in our listener
 var PORT = process.env.PORT || 8080;
 
+// Access CSS and images directory
+app.use(express.static(path.join(__dirname, './app/public')));
+app.use(express.static(path.join(__dirname, './app/public/images')));
+
 // parse application/x-www-form-urlencoded
 // app.use(bodyParser.urlencoded({ extended: false }))
 
@@ -23,6 +27,11 @@ var PORT = process.env.PORT || 8080;
 //     res.write('you posted:\n')
 //     res.end(JSON.stringify(req.body, null, 2))
 // })
+
+
+// =====================================================================
+
+
 
 var jsonParser = bodyParser.json()
 
@@ -66,15 +75,18 @@ app.use(bodyParser.text({ type: 'text/html' }))
 // // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 // // ================================================================================
 
-// Include route file
-require("./app/routing/apiRoutes.js")(app);
+// Include route files
+// require("./app/routing/apiRoutes.js")(app);
 require("./app/routing/htmlRoutes.js")(app);
+
+// require(path.join(__dirname, './app/routing/apiRoutes'))(app);
+// require(path.join(__dirname, './app/routing/htmlRoutes'))(app);
 
 // =============================================================================
 // LISTENER
 // The below code effectively "starts" our server
 // =============================================================================
 
-app.listen(PORT, function () {
+app.listen(PORT, function() {
     console.log("App listening on PORT: " + PORT);
 });

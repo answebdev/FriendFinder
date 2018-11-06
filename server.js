@@ -16,6 +16,7 @@ var PORT = process.env.PORT || 8080;
 app.use(express.static(path.join(__dirname, './app/public')));
 app.use(express.static(path.join(__dirname, './app/public/images')));
 
+// Create application/JSON parser
 var jsonParser = bodyParser.json()
 
 // create application/x-www-form-urlencoded parser
@@ -66,6 +67,6 @@ require("./app/routing/htmlRoutes.js")(app);
 // require(path.join(__dirname, './app/routing/htmlRoutes'))(app);
 
 // Code to start the server
-app.listen(PORT, function() {
+app.listen(PORT, function () {
     console.log("App listening on PORT: " + PORT);
 });

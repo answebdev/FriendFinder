@@ -10,11 +10,21 @@ body {
     font-weight: 700;
 }
 
-#main-button {
+#main-button,
+#dropdown-button,
+#submit-button {
     background-color: #4267b2;
     border-color: #4267b2;
 }
 
 #divider {
     color: #007bff;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+.footer {
+    font-size: 14px;
 }

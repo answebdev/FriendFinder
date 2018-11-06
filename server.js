@@ -59,7 +59,7 @@ app.use(bodyParser.text({ type: 'text/html' }))
 // // ================================================================================
 
 // Include route files
-// require("./app/routing/apiRoutes.js")(app);
+require("./app/routing/apiRoutes.js")(app);
 require("./app/routing/htmlRoutes.js")(app);
 
 // require(path.join(__dirname, './app/routing/apiRoutes'))(app);

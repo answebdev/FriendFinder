@@ -175,22 +175,13 @@
         <hr>
 
         <footer class="footer">
-            <p id="divider"><a href="#">API Friends List</a> | <a href="#">GitHub Repo</a></p>
+            <p id="divider"><a href="/api/friends">API Friends List</a> | <a href="#">GitHub Repo</a></p>
         </footer>
 
 
         <script type="text/javascript">
             // $(document).ready(function() {
-            //     $('select').material_select();
-            //     $('.modal').modal({
-            //         dismissible: false, // Modal can be dismissed by clicking outside of the modal
-            //         opacity: .5, // Opacity of modal background
-            //         inDuration: 300, // Transition in duration
-            //         outDuration: 200, // Transition out duration
-            //         startingTop: '4%', // Starting top style attribute
-            //         endingTop: '10%' // Ending top style attribute
-            //     });
-            // });
+
             // Activate submit button
             $('#submit-button').on('click', function (event) {
                 // var newFriendScores = [];
@@ -238,35 +229,44 @@
                         name: $("#name").val().trim(),
                         photo: $("#photoLink").val().trim(),
                         scores: [
-
-                                $("#q1").val(),
-                                $("#q2").val(),
-                                $("#q3").val(),
-                                $("#q4").val(),
-                                $("#q5").val(),
-                                $("#q6").val(),
-                                $("#q7").val(),
-                                $("#q8").val(),
-                                $("#q9").val(),
-                                $("#q10").val()
-
-                            // console.log(newFriend);
-                            //     $("#1").val(),
-                            //     $("#2").val(),
-                            //     $("#3").val(),
-                            //     $("#4").val(),
-                            //     $("#5").val(),
-                            //     $("#6").val(),
-                            //     $("#7").val(),
-                            //     $("#8").val(),
-                            //     $("#9").val(),
-                            //     $("#10").val()
+                            $("#q1").val(),
+                            $("#q2").val(),
+                            $("#q3").val(),
+                            $("#q4").val(),
+                            $("#q5").val(),
+                            $("#q6").val(),
+                            $("#q7").val(),
+                            $("#q8").val(),
+                            $("#q9").val(),
+                            $("#q10").val()
                         ]
                         // console.log(newFriend);
                     };
 
-                    console.log(userInput);
+                    console.log("USER INPUT: " + userInput);
+
                     // console.log(newFriendScores);
+
+                    // $.post('/api/friends', userInput)
+
+                    // $.post("/api/friends", userInput,
+                    //     function (data) {
+
+                    //         // Clear the form when submitting
+                    //         $("#name").val("");
+                    //         $("#photoLink").val("");
+                    //         $("#q1").val("");
+                    //         $("#q2").val("");
+                    //         $("#q3").val("");
+                    //         $("#q4").val("");
+                    //         $("#q5").val("");
+                    //         $("#q6").val("");
+                    //         $("#q7").val("");
+                    //         $("#q8").val("");
+                    //         $("#q9").val("");
+                    //         $("#q10").val("");
+
+                    //     });
 
                     var currentURL = window.location.origin;
 
@@ -275,6 +275,7 @@
                         // $("#bestFriend").text(data.name);
                         // $("#bestFriendPhoto").attr("src", data.photoLink);
                         // $("#bestFriendModal").modal("toggle");
+                        alert("WORKING!");
                     });
                 } else {
                     // If a required field is missing, show alert

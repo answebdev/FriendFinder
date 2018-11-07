@@ -17,22 +17,25 @@ app.use(express.static(path.join(__dirname, './app/public')));
 app.use(express.static(path.join(__dirname, './app/public/images')));
 
 // Create application/JSON parser
-var jsonParser = bodyParser.json()
+// var jsonParser = bodyParser.json()
+
+// // create application/x-www-form-urlencoded parser
+// var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 // create application/x-www-form-urlencoded parser
-var urlencodedParser = bodyParser.urlencoded({ extended: false })
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // POST /login gets urlencoded bodies
-app.post('/login', urlencodedParser, function (req, res) {
-    if (!req.body) return res.sendStatus(400)
-    res.send('welcome, ' + req.body.username)
-})
+// app.post('/login', urlencodedParser, function (req, res) {
+//     if (!req.body) return res.sendStatus(400)
+//     res.send('welcome, ' + req.body.username)
+// })
 
 // POST /api/users gets JSON bodies
-app.post('/api/users', jsonParser, function (req, res) {
-    if (!req.body) return res.sendStatus(400)
-    // create user in req.body
-})
+// app.post('/api/users', jsonParser, function (req, res) {
+//     if (!req.body) return res.sendStatus(400)
+//     // create user in req.body
+// })
 
 // parse various different custom JSON types as JSON
 app.use(bodyParser.json({ type: 'application/*+json' }))

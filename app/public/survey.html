@@ -28,182 +28,264 @@
         <form>
             <div class="form-group">
                 <label for="exampleInputEmail1">Name (Required)</label>
-                <input type="name" class="form-control" id="name" aria-describedby="name">
+                <input type="name" class="form-control validate" id="name" aria-describedby="name">
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Link to Photo Image (Required)</label>
-                <input type="photoLink" class="form-control" id="photoLink">
+                <input type="photoLink" class="form-control validate" id="photoLink">
             </div>
             <hr>
         </form>
         <h3>Question 1</h3>
-        <p>Your mind is always buzzing with unexplored ideas and plans.</p>
-        <div class="btn-group">
-            <button type="button" id="dropdown-button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Select an Option
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">4</a>
-                <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
-            </div>
+        <div class="form-group">
+            <label for="q1">Your mind is always buzzing with unexplored ideas and plans.</label>
+            <select class="form-control questions" id="q1">
+                <option value="empty">Select an Option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
         </div>
         <p></p>
         <h3>Question 2</h3>
-        <p>Generally speaking, you rely more on your experience than your imagination.</p>
-        <div class="btn-group">
-            <button type="button" id="dropdown-button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Select an Option
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">4</a>
-                <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
-            </div>
+        <div class="form-group">
+            <label for="q2">Generally speaking, you rely more on your experience than your imagination.</label>
+            <select class="form-control questions" id="q2">
+                <option value="empty">Select an Option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
         </div>
         <p></p>
         <h3>Question 3</h3>
-        <p>You find it easy to stay relaxed and focused even when there is some pressure.</p>
-        <div class="btn-group">
-            <button type="button" id="dropdown-button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Select an Option
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">4</a>
-                <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
-            </div>
+        <div class="form-group">
+            <label for="q3">You find it easy to stay relaxed and focused even when there is some pressure.
+            </label>
+            <select class="form-control questions" id="q3">
+                <option value="empty">Select an Option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
         </div>
         <p></p>
         <h3>Question 4</h3>
-        <p>You rarely do something just out of sheer curiosity.</p>
-        <div class="btn-group">
-            <button type="button" id="dropdown-button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Select an Option
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">4</a>
-                <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
-            </div>
+        <div class="form-group">
+            <label for="q4">You rarely do something just out of sheer curiosity.
+            </label>
+            <select class="form-control questions" id="q4">
+                <option value="empty">Select an Option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
         </div>
         <p></p>
         <h3>Question 5</h3>
-        <p>People can rarely upset you.</p>
-        <div class="btn-group">
-            <button type="button" id="dropdown-button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Select an Option
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">4</a>
-                <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
-            </div>
+        <div class="form-group">
+            <label for="q5">People can rarely upset you.</label>
+            <select class="form-control questions" id="q5">
+                <option value="empty">Select an Option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
         </div>
         <p></p>
         <h3>Question 6</h3>
-        <p>It is often difficult for you to relate to other people’s feelings.</p>
-        <div class="btn-group">
-            <button type="button" id="dropdown-button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Select an Option
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">4</a>
-                <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
-            </div>
+        <div class="form-group">
+            <label for="q6">It is often difficult for you to relate to other people’s feelings.</label>
+            <select class="form-control questions" id="q6">
+                <option value="empty">Select an Option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
         </div>
         <p></p>
         <h3>Question 7</h3>
-        <p>In a discussion, truth should be more important than people’s sensitivities.</p>
-        <div class="btn-group">
-            <button type="button" id="dropdown-button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Select an Option
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">4</a>
-                <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
-            </div>
+        <div class="form-group">
+            <label for="q7">In a discussion, truth should be more important than people’s sensitivities.</label>
+            <select class="form-control questions" id="q7">
+                <option value="empty">Select an Option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
         </div>
         <p></p>
         <h3>Question 8</h3>
-        <p>You rarely get carried away by fantasies and ideas.</p>
-        <div class="btn-group">
-            <button type="button" id="dropdown-button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Select an Option
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">4</a>
-                <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
-            </div>
+        <div class="form-group">
+            <label for="q8">You rarely get carried away by fantasies and ideas.</label>
+            <select class="form-control questions" id="q8">
+                <option value="empty">Select an Option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
         </div>
         <p></p>
         <h3>Question 9</h3>
-        <p>You think that everyone’s views should be respected regardless of whether they are supported by facts or
-            not.
-        </p>
-        <div class="btn-group">
-            <button type="button" id="dropdown-button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Select an Option
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">4</a>
-                <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
-            </div>
+        <div class="form-group">
+            <label for="q9">You think that everyone’s views should be respected regardless of whether they are
+                supported by facts or not.
+            </label>
+            <select class="form-control questions" id="q9">
+                <option value="empty">Select an Option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
         </div>
         <p></p>
         <h3>Question 10</h3>
-        <p>You feel more energetic after spending time with a group of people.</p>
-        <div class="btn-group">
-            <button type="button" id="dropdown-button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Select an Option
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">4</a>
-                <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
-            </div>
+        <div class="form-group">
+            <label for="q10">You feel more energetic after spending time with a group of people.</label>
+            <select class="form-control questions" id="q10">
+                <option value="empty">Select an Option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
         </div>
         <p></p>
-        <button type="button" id="submit-button" class="btn btn-primary btn-lg btn-block"><i class="fas fa-check-circle"></i> Submit</button>
+        <button type="button" id="submit-button" class="btn btn-primary btn-lg btn-block"><i class="fas fa-check-circle"></i>
+            Submit</button>
         <hr>
 
         <footer class="footer">
             <p id="divider"><a href="#">API Friends List</a> | <a href="#">GitHub Repo</a></p>
         </footer>
+
+
+        <script type="text/javascript">
+            // $(document).ready(function() {
+            //     $('select').material_select();
+            //     $('.modal').modal({
+            //         dismissible: false, // Modal can be dismissed by clicking outside of the modal
+            //         opacity: .5, // Opacity of modal background
+            //         inDuration: 300, // Transition in duration
+            //         outDuration: 200, // Transition out duration
+            //         startingTop: '4%', // Starting top style attribute
+            //         endingTop: '10%' // Ending top style attribute
+            //     });
+            // });
+            // Activate submit button
+            $('#submit-button').on('click', function (event) {
+                // var newFriendScores = [];
+                // alert("clicked!");
+                event.preventDefault();
+                // function formValidation() {
+                // var validInput = true;
+                // alert("Submit Button Clicked!");
+
+                // if($("#name" ==="")) {
+                //     alert("No blanks");
+                //     // validInput = false;
+                // }
+                // var validInput = true;
+                // $(".form-control").each(function() {
+                //     if ($(this).val() === "") {
+                //         validInput = false;
+                //     }
+                // });
+                // $(".dropdown-item").each(function() {
+                //     if ($(this).val() === "") {
+                //         validInput = false;
+                //     }
+                // });
+                // return validInput;
+                // }
+
+                // Form validation
+                var validInput = true;
+
+                if ($("#name").val() === "" || $("#photoLink").val() === "") {
+                    validInput = false;
+                    alert("Please complete the About You section");
+                } else if ($("#q1").val() === "empty" || $("#q2").val() === "empty" || $("#q3").val() === "empty"
+                    || $("#q4").val() === "empty" || $("#q5").val() === "empty" || $("#q6").val() === "empty"
+                    || $("#q7").val() === "empty" || $("#q8").val() === "empty" || $("#q9").val() === "empty" || $("#q10").val() === "empty") {
+                    validInput = false;
+                    alert("Please answer all the questions");
+                }
+
+                if (validInput === true) {
+                    // if (formValidation()) {
+                    // Collect user inputs
+                    var userInput = {
+                        name: $("#name").val().trim(),
+                        photo: $("#photoLink").val().trim(),
+                        scores: [
+
+                                $("#q1").val(),
+                                $("#q2").val(),
+                                $("#q3").val(),
+                                $("#q4").val(),
+                                $("#q5").val(),
+                                $("#q6").val(),
+                                $("#q7").val(),
+                                $("#q8").val(),
+                                $("#q9").val(),
+                                $("#q10").val()
+
+                            // console.log(newFriend);
+                            //     $("#1").val(),
+                            //     $("#2").val(),
+                            //     $("#3").val(),
+                            //     $("#4").val(),
+                            //     $("#5").val(),
+                            //     $("#6").val(),
+                            //     $("#7").val(),
+                            //     $("#8").val(),
+                            //     $("#9").val(),
+                            //     $("#10").val()
+                        ]
+                        // console.log(newFriend);
+                    };
+
+                    console.log(userInput);
+                    // console.log(newFriendScores);
+
+                    var currentURL = window.location.origin;
+
+                    // Ajax call for receiving response after POST req
+                    $.post(currentURL + "/api/friends", userInput, function (data) {
+                        // $("#bestFriend").text(data.name);
+                        // $("#bestFriendPhoto").attr("src", data.photoLink);
+                        // $("#bestFriendModal").modal("toggle");
+                    });
+                } else {
+                    // If a required field is missing, show alert
+                    alert("Survey is incomplete!");
+                }
+            });
+
+
+        </script>
+
+
 
     </div>
 

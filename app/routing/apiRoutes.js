@@ -3,7 +3,7 @@
 // We are linking our routes to a series of "data" sources.
 // These data sources hold arrays of information on table-data, waitinglist, etc.
 // ===============================================================================
-
+var path = require('path');
 var friendsData = require("../data/friends.js");
 
 // ===============================================================================
@@ -30,13 +30,18 @@ module.exports = function(app) {
   // (ex. User fills out the survey request... this data is then sent to the server...
   // Then the server saves the data to the friendsData array)
   // ---------------------------------------------------------------------------
+  // Add a new friend
   app.post("/api/friends", function(req, res) {
-      var closestMAtch = {
-          name: "",
-          photo: "",
-          friendDifference: ""
-      };
-      console.log(req.body);
+    // Capture the user input object
+    var userInput = req.body;
+    // console.log(req.body);
+    console.log("userInput = " + JSON.stringify(userInput));
+
+      // var closestMatch = {
+      //     name: "",
+      //     photo: "",
+      //     scores: ""
+      // };
 
   });
 
@@ -59,11 +64,11 @@ module.exports = function(app) {
   // I added this below code so you could clear out the table while working with the functionality.
   // Don"t worry about it!
 
-  app.post("/api/clear", function(req, res) {
-    // Empty out the arrays of data
-    tableData.length = [];
-    waitListData.length = [];
+  // app.post("/api/clear", function(req, res) {
+  //   // Empty out the arrays of data
+  //   tableData.length = [];
+  //   waitListData.length = [];
 
-    res.json({ ok: true });
-  });
+  //   res.json({ ok: true });
+  // });
 };

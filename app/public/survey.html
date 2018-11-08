@@ -41,11 +41,11 @@
             <label for="q1">Your mind is always buzzing with unexplored ideas and plans.</label>
             <select class="form-control questions" id="q1">
                 <option value="empty">Select an Option</option>
-                <option value="1">1</option>
+                <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
-                <option value="5">5</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
         </div>
         <p></p>
@@ -54,11 +54,11 @@
             <label for="q2">Generally speaking, you rely more on your experience than your imagination.</label>
             <select class="form-control questions" id="q2">
                 <option value="empty">Select an Option</option>
-                <option value="1">1</option>
+                <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
-                <option value="5">5</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
         </div>
         <p></p>
@@ -68,11 +68,11 @@
             </label>
             <select class="form-control questions" id="q3">
                 <option value="empty">Select an Option</option>
-                <option value="1">1</option>
+                <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
-                <option value="5">5</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
         </div>
         <p></p>
@@ -82,11 +82,11 @@
             </label>
             <select class="form-control questions" id="q4">
                 <option value="empty">Select an Option</option>
-                <option value="1">1</option>
+                <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
-                <option value="5">5</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
         </div>
         <p></p>
@@ -95,11 +95,11 @@
             <label for="q5">People can rarely upset you.</label>
             <select class="form-control questions" id="q5">
                 <option value="empty">Select an Option</option>
-                <option value="1">1</option>
+                <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
-                <option value="5">5</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
         </div>
         <p></p>
@@ -108,11 +108,11 @@
             <label for="q6">It is often difficult for you to relate to other people’s feelings.</label>
             <select class="form-control questions" id="q6">
                 <option value="empty">Select an Option</option>
-                <option value="1">1</option>
+                <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
-                <option value="5">5</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
         </div>
         <p></p>
@@ -121,11 +121,11 @@
             <label for="q7">In a discussion, truth should be more important than people’s sensitivities.</label>
             <select class="form-control questions" id="q7">
                 <option value="empty">Select an Option</option>
-                <option value="1">1</option>
+                <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
-                <option value="5">5</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
         </div>
         <p></p>
@@ -134,11 +134,11 @@
             <label for="q8">You rarely get carried away by fantasies and ideas.</label>
             <select class="form-control questions" id="q8">
                 <option value="empty">Select an Option</option>
-                <option value="1">1</option>
+                <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
-                <option value="5">5</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
         </div>
         <p></p>
@@ -149,11 +149,11 @@
             </label>
             <select class="form-control questions" id="q9">
                 <option value="empty">Select an Option</option>
-                <option value="1">1</option>
+                <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
-                <option value="5">5</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
         </div>
         <p></p>
@@ -162,11 +162,11 @@
             <label for="q10">You feel more energetic after spending time with a group of people.</label>
             <select class="form-control questions" id="q10">
                 <option value="empty">Select an Option</option>
-                <option value="1">1</option>
+                <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
-                <option value="5">5</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
         </div>
         <p></p>
@@ -180,9 +180,9 @@
 
         <!-- MODAL -->
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#resultsModal">
+        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#resultsModal">
             Launch demo modal
-        </button>
+        </button> -->
 
         <!-- Modal -->
         <div class="modal fade" id="resultsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -304,7 +304,7 @@
                     $.post(currentURL + "/api/friends", userInput, function (data) {
                         $("#matchName").text(data.name);
                         $("#matchPhoto").attr("src", data.photoLink);
-                        // $("#resultsModal").modal("toggle");
+                        $("#resultsModal").modal("toggle");
                         // alert("WORKING!");
                     });
                 } else {

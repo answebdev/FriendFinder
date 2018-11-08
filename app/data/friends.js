@@ -66,6 +66,38 @@ var friendsArray = [
         ]
     },
     {
+        "name": "John",
+        "photo": "https://images.pexels.com/photos/630837/pexels-photo-630837.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "scores": [
+            4,
+            1,
+            5,
+            3,
+            2,
+            1,
+            5,
+            5,
+            2,
+            3
+        ]
+    },
+    {
+        "name": "Min",
+        "photo": "https://images.pexels.com/photos/1558888/pexels-photo-1558888.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "scores": [
+            1,
+            2,
+            1,
+            1,
+            2,
+            4,
+            2,
+            1,
+            5,
+            4
+        ]
+    },
+    {
         "name": "Daniel",
         "photo": "https://images.pexels.com/photos/1551446/pexels-photo-1551446.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "scores": [

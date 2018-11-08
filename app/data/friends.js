@@ -81,8 +81,6 @@ var friendsArray = [
             2
         ]
     }
-    
-
 ];
 
 // Export the array. This makes it accessible to other files using require.

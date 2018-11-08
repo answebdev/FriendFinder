@@ -178,6 +178,36 @@
             <p id="divider"><a href="/api/friends">API Friends List</a> | <a href="#">GitHub Repo</a></p>
         </footer>
 
+        <!-- MODAL -->
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#resultsModal">
+            Launch demo modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="resultsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><strong>Best Match</strong></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="matchName"></h2>
+                        <img id="matchPhoto" src="https://talenthouse-res.cloudinary.com/image/upload/b_rgb:F7F7F7,c_fill,d_profilepic_placeholder_2x.png,f_auto,h_360,w_360/v1/user-331248/profilePicture/muizrn2pnxhs7ojbwdnm.jpg"
+                            alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" id="modal-button" data-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <script type="text/javascript">
             // $(document).ready(function() {
@@ -214,12 +244,12 @@
 
                 if ($("#name").val() === "" || $("#photoLink").val() === "") {
                     validInput = false;
-                    alert("Please complete the About You section");
+                    // alert("Please complete the About You section");
                 } else if ($("#q1").val() === "empty" || $("#q2").val() === "empty" || $("#q3").val() === "empty"
                     || $("#q4").val() === "empty" || $("#q5").val() === "empty" || $("#q6").val() === "empty"
                     || $("#q7").val() === "empty" || $("#q8").val() === "empty" || $("#q9").val() === "empty" || $("#q10").val() === "empty") {
                     validInput = false;
-                    alert("Please answer all the questions");
+                    // alert("Please answer all the questions");
                 }
 
                 if (validInput === true) {
@@ -272,14 +302,14 @@
 
                     // Ajax call for receiving response after POST req
                     $.post(currentURL + "/api/friends", userInput, function (data) {
-                        // $("#bestFriend").text(data.name);
-                        // $("#bestFriendPhoto").attr("src", data.photoLink);
-                        // $("#bestFriendModal").modal("toggle");
-                        alert("WORKING!");
+                        $("#matchName").text(data.name);
+                        $("#matchPhoto").attr("src", data.photoLink);
+                        // $("#resultsModal").modal("toggle");
+                        // alert("WORKING!");
                     });
                 } else {
                     // If a required field is missing, show alert
-                    alert("Survey is incomplete!");
+                    alert("Please fill out all of the fields before submitting survey!");
                 }
             });
 

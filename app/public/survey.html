@@ -185,8 +185,7 @@
         </button> -->
 
         <!-- Modal -->
-        <div class="modal fade" id="resultsModal" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
+        <div class="modal fade" id="resultsModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -197,8 +196,9 @@
                     </div>
                     <div class="modal-body">
                         <h2 id="matchName"></h2>
-                        <img id="matchPhoto" src="https://talenthouse-res.cloudinary.com/image/upload/b_rgb:F7F7F7,c_fill,d_profilepic_placeholder_2x.png,f_auto,h_360,w_360/v1/user-331248/profilePicture/muizrn2pnxhs7ojbwdnm.jpg"
-                            alt="">
+                        <img id="matchPhoto" src="" alt="">
+                        <!-- <img id="matchPhoto" src="https://talenthouse-res.cloudinary.com/image/upload/b_rgb:F7F7F7,c_fill,d_profilepic_placeholder_2x.png,f_auto,h_360,w_360/v1/user-331248/profilePicture/muizrn2pnxhs7ojbwdnm.jpg"
+                            alt=""> -->
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" id="modal-button" data-dismiss="modal">Close</button>
@@ -209,111 +209,114 @@
         </div>
     </div>
 
-        <script type="text/javascript">
-            // $(document).ready(function() {
+    <script type="text/javascript">
+        // $(document).ready(function() {
 
-            // Activate submit button
-            $('#submit-button').on('click', function (event) {
-                // var newFriendScores = [];
-                // alert("clicked!");
-                event.preventDefault();
-                // function formValidation() {
-                // var validInput = true;
-                // alert("Submit Button Clicked!");
+        // Activate submit button
+        $('#submit-button').on('click', function (event) {
+            // var newFriendScores = [];
+            // alert("clicked!");
+            event.preventDefault();
+            // function formValidation() {
+            // var validInput = true;
+            // alert("Submit Button Clicked!");
 
-                // if($("#name" ==="")) {
-                //     alert("No blanks");
-                //     // validInput = false;
-                // }
-                // var validInput = true;
-                // $(".form-control").each(function() {
-                //     if ($(this).val() === "") {
-                //         validInput = false;
-                //     }
-                // });
-                // $(".dropdown-item").each(function() {
-                //     if ($(this).val() === "") {
-                //         validInput = false;
-                //     }
-                // });
-                // return validInput;
-                // }
+            // if($("#name" ==="")) {
+            //     alert("No blanks");
+            //     // validInput = false;
+            // }
+            // var validInput = true;
+            // $(".form-control").each(function() {
+            //     if ($(this).val() === "") {
+            //         validInput = false;
+            //     }
+            // });
+            // $(".dropdown-item").each(function() {
+            //     if ($(this).val() === "") {
+            //         validInput = false;
+            //     }
+            // });
+            // return validInput;
+            // }
 
-                // Form validation
-                var validInput = true;
+            // Form validation
+            var validInput = true;
 
-                if ($("#name").val() === "" || $("#photoLink").val() === "") {
-                    validInput = false;
-                    // alert("Please complete the About You section");
-                } else if ($("#q1").val() === "empty" || $("#q2").val() === "empty" || $("#q3").val() === "empty"
-                    || $("#q4").val() === "empty" || $("#q5").val() === "empty" || $("#q6").val() === "empty"
-                    || $("#q7").val() === "empty" || $("#q8").val() === "empty" || $("#q9").val() === "empty" || $("#q10").val() === "empty") {
-                    validInput = false;
-                    // alert("Please answer all the questions");
-                }
+            if ($("#name").val() === "" || $("#photoLink").val() === "") {
+                validInput = false;
+                // alert("Please complete the About You section");
+            } else if ($("#q1").val() === "empty" || $("#q2").val() === "empty" || $("#q3").val() === "empty"
+                || $("#q4").val() === "empty" || $("#q5").val() === "empty" || $("#q6").val() === "empty"
+                || $("#q7").val() === "empty" || $("#q8").val() === "empty" || $("#q9").val() === "empty" || $("#q10").val() === "empty") {
+                validInput = false;
+                // alert("Please answer all the questions");
+            }
 
-                if (validInput === true) {
-                    // if (formValidation()) {
-                    // Collect user inputs
-                    var userInput = {
-                        name: $("#name").val().trim(),
-                        photo: $("#photoLink").val().trim(),
-                        scores: [
-                            $("#q1").val(),
-                            $("#q2").val(),
-                            $("#q3").val(),
-                            $("#q4").val(),
-                            $("#q5").val(),
-                            $("#q6").val(),
-                            $("#q7").val(),
-                            $("#q8").val(),
-                            $("#q9").val(),
-                            $("#q10").val()
-                        ]
-                        // console.log(newFriend);
-                    };
+            if (validInput === true) {
+                // if (formValidation()) {
+                    
+                // Collect user inputs
+                var userInput = {
+                    name: $("#name").val().trim(),
+                    photo: $("#photoLink").val().trim(),
+                    scores: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val()
+                    ]
+                    // console.log(newFriend);
+                };
 
-                    console.log("USER INPUT: " + userInput);
+                // console.log("USER INPUT: " + userInput);
 
-                    // console.log(newFriendScores);
+                // console.log(newFriendScores);
 
-                    // $.post('/api/friends', userInput)
+                // $.post('/api/friends', userInput)
 
-                    // $.post("/api/friends", userInput,
-                    //     function (data) {
+                // $.post("/api/friends", userInput,
+                //     function (data) {
 
-                            // Clear the form when submitting
-                            $("#name").val("");
-                            $("#photoLink").val("");
-                            $("#q1").val("");
-                            $("#q2").val("");
-                            $("#q3").val("");
-                            $("#q4").val("");
-                            $("#q5").val("");
-                            $("#q6").val("");
-                            $("#q7").val("");
-                            $("#q8").val("");
-                            $("#q9").val("");
-                            $("#q10").val("");
-                    //     });
+                // Clear the form when submitting
+                $("#name").val("");
+                $("#photoLink").val("");
+                $("#q1").val("");
+                $("#q2").val("");
+                $("#q3").val("");
+                $("#q4").val("");
+                $("#q5").val("");
+                $("#q6").val("");
+                $("#q7").val("");
+                $("#q8").val("");
+                $("#q9").val("");
+                $("#q10").val("");
+                //     });
 
-                    var currentURL = window.location.origin;
+                var currentURL = window.location.origin;
 
-                    // Ajax call for receiving response after POST request
-                    $.post(currentURL + "/api/friends", userInput, function (data) {
-                        $("#matchName").text(data.name);
-                        $("#matchPhoto").attr("src", data.photoLink);
-                        $("#resultsModal").modal("toggle");
-                        alert("WORKING!");
-                    });
-                } else {
-                    // If a required field is missing, show alert
-                    alert("Please fill out all of the fields before submitting survey!");
-                }
-            });
+                // Ajax call for receiving response after POST request
+                $.post(currentURL + "/api/friends", userInput, function (data) {
+                    $("#matchName").text(data.name);
+                    $("#matchPhoto").attr("src", data.photoLink);
+                    $("#resultsModal").modal("toggle");
+                    alert("WORKING!");
+                    console.log("DATA   NAME: " + data.name);
+                    console.log("DATA   PHOTO: " + data.photo);
+                });
+            } else {
+                // If a required field is missing, show alert
+                alert("Please fill out all of the fields before submitting survey!");
+            }
+        });
 
 
-        </script>
+    </script>
 
 
 

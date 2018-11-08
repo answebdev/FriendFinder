@@ -5,7 +5,7 @@
 // But you could have it be an empty array as well.
 // ===============================================================================
 
-console.log("WELCOME TO THE FRIENDS DATA FILE");
+// console.log("WELCOME TO THE FRIENDS DATA FILE");
 
 // var friendsArray = [
 //     {
@@ -21,15 +21,15 @@ var friendsArray = [
         "name": "Ahmed",
         "photo": "https://images.pexels.com/photos/954202/pexels-photo-954202.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "scores": [
-            5,
             1,
-            4,
-            4,
-            5,
             1,
-            2,
-            5,
-            4,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
             1
         ]
     },
@@ -37,16 +37,16 @@ var friendsArray = [
         "name": "Karen",
         "photo": "https://images.pexels.com/photos/1539679/pexels-photo-1539679.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "scores": [
-            1,
-            2,
-            4,
-            4,
-            3,
-            4,
-            1,
-            3,
             5,
-            2
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
         ]
     },
     {

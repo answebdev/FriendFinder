@@ -32,8 +32,15 @@ module.exports = function(app) {
   // ---------------------------------------------------------------------------
   // Add a new friend
   app.post("/api/friends", function(req, res) {
+    var newFriend = {
+      name: "",
+      photoLink: "",
+      difference: 5000
+    };
+    console.log("REQ.BODY: " + req.body);
     // Capture the user input object
     var userInput = req.body;
+    var userScores = userInput.scores;
     // console.log(req.body);
     console.log("userInput = " + JSON.stringify(userInput));
 

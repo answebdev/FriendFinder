@@ -303,9 +303,9 @@
                 // Ajax call for receiving response after POST request
                 $.post(currentURL + "/api/friends", userInput, function (data) {
                     $("#matchName").text(data.name);
-                    $("#matchPhoto").attr("src", data.photoLink);
+                    $("#matchPhoto").attr("src", data.photo);
                     $("#resultsModal").modal("toggle");
-                    alert("WORKING!");
+                    // alert("WORKING!");
                     console.log("DATA   NAME: " + data.name);
                     console.log("DATA   PHOTO: " + data.photo);
                 });

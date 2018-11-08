@@ -63,7 +63,7 @@ module.exports = function (app) {
         difference += Math.abs(parseInt(userScores[j]) - parseInt(friendsArray[i].scores[j]));
         // difference += Math.abs(friendsArray[i].scores[j] - userScores[j]);
       }
-      console.log("DIFFERENCE: " + difference);
+      // console.log("DIFFERENCE: " + difference);
 
       // If the difference is the lowest, this is the best match
       // if (difference < totalDifference) {
@@ -84,7 +84,7 @@ module.exports = function (app) {
         bestMatch.photo = friendsArray[i].photo;
         bestMatch.totalDifference = difference;
 
-        console.log("BEST MATCH: " + bestMatch.name);
+        console.log("\nBEST MATCH: " + bestMatch.name);
         console.log("PHOTO: " + bestMatch.photo);
         console.log("DIFFERENCE: " + bestMatch.totalDifference + "\n");
       }
@@ -95,7 +95,7 @@ module.exports = function (app) {
     // var userInput = req.body;
     // var userScores = userInput.scores;
     // console.log(req.body);
-    console.log("userInput = " + JSON.stringify(userInput));
+    console.log("\nuserInput = " + JSON.stringify(userInput));
 
     // var closestMatch = {
     //     name: "",

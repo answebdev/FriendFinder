@@ -1,5 +1,23 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Bitter', sans-serif; */
+    background-color: #e9ecef;
+}
+
+#home-section {
+    background-color: #ffffff;
+    background-image: url(https://images.pexels.com/photos/959323/pexels-photo-959323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 2em;
+	background-size: cover;
+	background-position: center;
+    overflow: hidden;
+}
+
+.jumbotron {
+    background-color: #e9ecef;
 }
 
 .display-4 {
@@ -16,14 +34,66 @@ body {
 
 #main-button,
 #dropdown-button,
-#submit-button,
+/* #submit-button, */
 #modal-button {
     background-color: #4267b2;
     border-color: #4267b2;
 }
 
+#submit-button {
+    background-color: #4267b2;
+    color: #ffffff; /* button text color */
+    outline: none;
+    background: transparent;
+    border: none;
+    letter-spacing: 0.1em;
+    padding: 8px 10px; 
+    font-size: 16px;
+    line-height: 2;
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all .5s;
+  }
+
+  #submit-button:before,
+  #submit-button:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: #e9ecef; /* onhover background color */
+  z-index: -1;
+  transform: translate3D(0,-100%,0); /* move elements above button so they don't appear initially */
+  transition: all .5s;
+}
+
+#submit-button:before {
+  background: #4267b2; /* button default background color */
+  z-index: -2;
+  transform: translate3D(0,0,0);
+}
+
+#submit-button:hover {
+    background-color: #ffffff;
+    color: #4267b2;
+    border: 1px solid #4267b2;
+}
+
+#submit-button:hover:after {
+  transform: translate3D(0,0,0);
+  transition: all .5s;
+}
+
 #divider {
-    color: #007bff;
+    color: #4267b2;
 }
 
 h3 {

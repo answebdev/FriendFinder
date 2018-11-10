@@ -122,3 +122,35 @@ a {
     width: 100%;
     height: auto;
 }
+
+/* ===== MEDIA QUERIES ===== */
+
+@media screen and (min-width: 981px) and (max-width: 1200px) {
+    .questions {
+        width: 20%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 980px) {
+    .questions {
+        width: 50%;
+    }
+}
+  
+@media screen and (min-width: 641px) and (max-width: 768px) { 
+    .questions {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 640px) {
+    .questions {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    .questions {
+        width: 100%;
+    }
+}

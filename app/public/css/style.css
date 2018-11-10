@@ -1,3 +1,8 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     /* font-family: 'Bitter', sans-serif; */
@@ -12,7 +17,7 @@ body {
     position: relative;
     padding: 2em;
 	background-size: cover;
-	background-position: center;
+	background-position: 50% 78%;
     overflow: hidden;
 }
 

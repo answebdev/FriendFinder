@@ -19,7 +19,7 @@ var friendsArray = [
     },
     {
         "name": "Karen",
-        "photo": "https://images.pexels.com/photos/1539679/pexels-photo-1539679.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "photo": "https://images.pexels.com/photos/1381558/pexels-photo-1381558.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "scores": [
             5,
             5,
@@ -83,7 +83,7 @@ var friendsArray = [
     },
     {
         "name": "Kim",
-        "photo": "https://images.pexels.com/photos/1381558/pexels-photo-1381558.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "photo": "https://images.pexels.com/photos/89643/pexels-photo-89643.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "scores": [
             5,
             3,

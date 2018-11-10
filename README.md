@@ -25,10 +25,10 @@ https://nameless-stream-53223.herokuapp.com/
 
 # Screenshots
 
+![Screenshot 04](screenshots/FriendFinderDemoGIF.gif "Demo")
+
 ![Screenshot 01](screenshots/friendFinder-screenshot01.png "Home Page")
 
 ![Screenshot 02](screenshots/friendFinder-screenshot02.png "Survey Page")
 
 ![Screenshot 03](screenshots/friendFinder-screenshot03.png "API Friends List")
-
-![Screenshot 04](screenshots/FriendFinderDemoGIF.gif "Demo")

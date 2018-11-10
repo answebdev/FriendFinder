@@ -82,6 +82,22 @@ var friendsArray = [
         ]
     },
     {
+        "name": "Kim",
+        "photo": "https://images.pexels.com/photos/1381558/pexels-photo-1381558.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "scores": [
+            1,
+            2,
+            1,
+            1,
+            2,
+            4,
+            2,
+            1,
+            5,
+            4
+        ]
+    },
+    {
         "name": "Daniel",
         "photo": "https://images.pexels.com/photos/1551446/pexels-photo-1551446.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "scores": [

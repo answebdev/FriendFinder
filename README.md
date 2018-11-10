@@ -31,6 +31,4 @@ https://nameless-stream-53223.herokuapp.com/
 
 ![Screenshot 03](screenshots/friendFinder-screenshot03.png "API Friends List")
 
-# Demo
-
-https://drive.google.com/file/d/1i3b02ar17zu_Trfoq1_0GOHCg7ZRTZMp/view
+![Screenshot 04](screenshots/FriendFinderDemo.gif "Demo")

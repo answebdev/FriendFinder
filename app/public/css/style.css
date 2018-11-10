@@ -5,7 +5,6 @@ html, body {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    /* font-family: 'Bitter', sans-serif; */
     background-color: #e9ecef;
 }
 
@@ -39,7 +38,6 @@ body {
 
 #main-button,
 #dropdown-button,
-/* #submit-button, */
 #modal-button {
     background-color: #4267b2;
     border-color: #4267b2;
@@ -47,7 +45,7 @@ body {
 
 #submit-button {
     background-color: #4267b2;
-    color: #ffffff; /* button text color */
+    color: #ffffff;
     outline: none;
     background: transparent;
     border: none;
@@ -74,14 +72,14 @@ body {
   right: 0;
   bottom: 0;
   height: 100%;
-  background: #e9ecef; /* onhover background color */
+  background: #e9ecef;
   z-index: -1;
-  transform: translate3D(0,-100%,0); /* move elements above button so they don't appear initially */
+  transform: translate3D(0,-100%,0);
   transition: all .5s;
 }
 
 #submit-button:before {
-  background: #4267b2; /* button default background color */
+  background: #4267b2;
   z-index: -2;
   transform: translate3D(0,0,0);
 }

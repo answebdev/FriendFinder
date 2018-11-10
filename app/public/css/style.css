@@ -9,7 +9,6 @@ body {
 }
 
 #home-section {
-    /* image from pexels.com */
     background-image: url(https://images.pexels.com/photos/959323/pexels-photo-959323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-color: #ffffff;
     width: 100%;
